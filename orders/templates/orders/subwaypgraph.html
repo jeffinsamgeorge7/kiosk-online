@@ -1,0 +1,24 @@
+ {% load static %}
+  <html>
+{% if user.is_superuser %}
+<h1>Subway Items<h1>
+    {% if chart %}
+        <img  src="data:image/png;base64, {{ chart|safe}} ">
+    {% endif%}
+  <!--
+    <p>
+<h1>Snacks Items<h2>
+    {% if chart1 %}
+        <img src="data:image/png;base64, {{ chart1|safe}} ">
+    {% endif%}
+</p><p>
+<h1>Drinks Items<h2>
+        {% if chart2 %}
+            <img src="data:image/png;base64, {{ chart2|safe}} ">
+        {% endif%}
+</p>
+-->
+{% endif%}
+</html>
+{% load static %}
+  
